@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toast Generator</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="box">
+      <textarea
+        name="toastMessage"
+        id="toastMessage"
+        cols="30"
+        rows="10"
+        placeholder="Write here something"
+      ></textarea>
+      <div class="toastSettings">
+        <div>
+          <label for="timeDuration">Duration:</label>
+          <input type="number" id="timeDuration" value="3000" />
+        </div>
+        <div>
+          <label for="isCancelable">Is Cancelable</label>
+          <input type="checkbox" id="isCancelable" />
+        </div>
+        <div>
+          <label for="success">Success</label>
+          <input
+            type="radio"
+            name="toastType"
+            id="success"
+            value="success"
+            checked
+          />
+          <label for="error">Error</label>
+          <input type="radio" name="toastType" id="error" value="error" />
+        </div>
+        <button id="addToastBtn">Add Toast</button>
+        <button id="clearToastBtn">Clear Toast</button>
+      </div>
+    </div>
+    <div id="toastBox">
+      <!-- <div style="width: 400px; height:100px; background-color: green;">
+            jewifefeoif
+        </div>
+        <div style="width: 400px; height:100px; background-color: red;">
+            ewfewfeffewf
+        </div> -->
+    </div>
+  </body>
+</html>

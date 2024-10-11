@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: flex;
+  width: 520px;
+  gap: 1rem;
+  background-color: rgb(190, 188, 188);
+  padding: 1rem;
+}
+
+.toastSettings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#toastBox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.toastMessageBox {
+  width: 200px;
+  height: 100px;
+  color: white;
+  border-radius: 10px;
+  position: relative;
+}
+.successToast {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.errorToast {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toastCancel {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  /* background-color: black;
+    height: 20px;
+    width: 20px; */
+}
